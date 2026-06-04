@@ -55,16 +55,16 @@ def mode_update(new_mode):
     """Updates the logger module mode"""
     global log_class
     if new_mode == "disabled":
-        log_class = DummyLogger
+        log_class = DummyLogger()
 
     elif new_mode == "terminal":
-        log_class = TerminalLogger
+        log_class = TerminalLogger()
 
     elif new_mode == "file":
-        log_class = FileLogger
+        log_class = FileLogger()
 
     elif new_mode == "file_terminal":
-        log_class = FileTerminalLogger
+        log_class = FileTerminalLogger()
 
     else:
         raise ValueError(f"Valid Modes are 'disabled', 'terminal' 'file' and\
