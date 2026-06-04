@@ -40,13 +40,13 @@ class FileLogger(Logger):
     """Logger that outputs to file"""
     def output(self, msg):
         with open(LOG_FILE, "a", encoding="utf-8") as file:
-            file.write(msg)
+            file.write(f'{msg}\n')
 
 class FileTerminalLogger(Logger):
     """logger that outputs to both File and Terminal"""
     def output(self, msg):
         with open(LOG_FILE, "a", encoding="utf-8") as file:
-            file.write(msg)
+            file.write(f'{msg}\n')
         print(msg)
 
 log_class = DummyLogger()
