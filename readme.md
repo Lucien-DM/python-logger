@@ -2,7 +2,7 @@
 ## About
 This is a basic logging module for python built in python. It is much more simple than the built in python 3 one.
 ## Contents of this Repository
-`logger_example.py` - A peace of example code that uses every function and mode of the module
+`logger_example.py` - A piece of example code that uses every function and mode of the module
 `logger.py` - The module itself
 `readme.md` - This File
 `run.log` - An example log file that you would get printed out from `logger_example.py`
