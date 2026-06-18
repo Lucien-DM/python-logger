@@ -1,6 +1,6 @@
 """This is a logging library"""
 import time
-
+_VERSION = "V1.0"
 LOG_FILE = "run.log"
 
 class Logger:
@@ -78,3 +78,7 @@ def warn(msg):
 def info(msg):
     """Allows program to call info through module"""
     _log_class.info(msg)
+
+def get_version():
+    """Returns the version of the module"""
+    return _VERSION

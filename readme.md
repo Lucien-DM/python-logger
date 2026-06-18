@@ -20,6 +20,7 @@ This is a basic logging module for python built in python. It is much more simpl
 `error(msg)` - Outputs an Error with the message `msg`  
 `warn(msg)` - Outputs a Warning with the message `msg`  
 `info(msg)` - Outputs Information with the message `msg`  
+`get_version()` - Returns the version string  
 `mode_update(new_mode)` - Changes the mode. see **Modes**  
 
 ### Variables
