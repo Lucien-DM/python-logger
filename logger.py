@@ -1,6 +1,6 @@
 """This is a logging library"""
 import time
-_VERSION = "V1.0"
+_VERSION = "V1.1"
 LOG_FILE = "run.log"
 
 class Logger:
@@ -19,6 +19,9 @@ class Logger:
         self._output(self._message("INFO", msg))
     def _output(self, msg):
         """pass"""
+    def direct_write(self, msg):
+        """directly outputs to logfile/terminal"""
+        self._output(msg)
 
 class DummyLogger:
     """This logger does absolutely nothing"""
@@ -77,6 +80,10 @@ def warn(msg):
     _log_class.warn(msg)
 def info(msg):
     """Allows program to call info through module"""
+    _log_class.info(msg)
+
+def direct_write(msg):
+    """wraps the method"""
     _log_class.info(msg)
 
 def get_version():

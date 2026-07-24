@@ -22,6 +22,6 @@ This is a basic logging module for python built in python. It is much more simpl
 `info(msg)` - Outputs Information with the message `msg`  
 `get_version()` - Returns the version string  
 `mode_update(new_mode)` - Changes the mode. see **Modes**  
-
+`direct_write(msg)` - writes directly to the output  
 ### Variables
 `LOG_FILE` - By default it's value is `"run.log"`. It dictates what file the file output will output to. Must be a `str` value.  
